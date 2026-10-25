@@ -1,19 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imgContacto"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/bg_circle_gris"
+            android:padding="28dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_camera"
+            app:shapeAppearanceOverlay="@style/CircleImage" />
+
+        <TextView
+            android:id="@+id/tvAgregarImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:padding="6dp"
+            android:text="Agregar imagen"
+            android:textColor="@color/azul" />
+
+        <TextView style="@style/Etiqueta" android:text="País" />
+
+        <Spinner
+            android:id="@+id/spPais"
+            style="@style/Campo"
+            android:padding="8dp" />
+
+        <TextView style="@style/Etiqueta" android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/etNombre"
+            style="@style/Campo"
+            android:hint="Nombre completo"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName|textCapWords"
+            android:maxLines="1" />
+
+        <TextView style="@style/Etiqueta" android:text="Teléfono" />
+
+        <EditText
+            android:id="@+id/etTelefono"
+            style="@style/Campo"
+            android:hint="Solo dígitos"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            android:maxLines="1" />
+
+        <TextView style="@style/Etiqueta" android:text="Nota" />
+
+        <EditText
+            android:id="@+id/etNota"
+            style="@style/Campo"
+            android:gravity="top"
+            android:hint="Ej: Compañera de clase"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences"
+            android:minLines="3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="20dp"
+            android:text="Guardar contacto" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerContactos"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:text="Ver contactos" />
+    </LinearLayout>
+</ScrollView>
