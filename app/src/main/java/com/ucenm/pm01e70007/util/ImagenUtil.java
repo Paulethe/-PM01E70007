@@ -10,7 +10,6 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/** Conversión de imágenes a byte[] (BLOB) y viceversa. */
 public final class ImagenUtil {
 
     private static final int MAX_LADO = 640;

@@ -24,7 +24,7 @@ import com.ucenm.pm01e70007.util.Formato;
 import com.ucenm.pm01e70007.util.ImagenUtil;
 import com.ucenm.pm01e70007.util.Paises;
 
-/** PANTALLA 3: confirmar y realizar la llamada (ACTION_CALL + permiso CALL_PHONE en ejecución). */
+/** Confirmar y realizar la llamada */
 public class LlamarActivity extends AppCompatActivity {
 
     private Contactos contacto;

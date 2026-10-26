@@ -1,6 +1,6 @@
 package com.ucenm.pm01e70007.model;
 
-/** MODELO: representa un contacto. */
+/** representa un contacto. */
 public class Contactos {
     private int id;
     private String pais;

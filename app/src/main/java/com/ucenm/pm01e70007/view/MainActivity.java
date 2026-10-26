@@ -24,7 +24,7 @@ import com.ucenm.pm01e70007.util.ImagenUtil;
 import com.ucenm.pm01e70007.util.Paises;
 import com.ucenm.pm01e70007.util.Validador;
 
-/** PANTALLA 1: registro (y actualización) de contacto. */
+/** Registro (y actualización) de contacto. */
 public class MainActivity extends AppCompatActivity {
 
     public static final String EXTRA_ID = "contacto_id";

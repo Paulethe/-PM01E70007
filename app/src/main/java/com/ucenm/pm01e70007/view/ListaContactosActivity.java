@@ -27,7 +27,7 @@ import com.ucenm.pm01e70007.util.Paises;
 
 import java.util.List;
 
-/** PANTALLA 2: lista de contactos (listar, buscar, actualizar, eliminar, compartir, ver imagen, llamar). */
+/** PANTALLA 2: lista de contactos */
 public class ListaContactosActivity extends AppCompatActivity {
 
     private ContactoController controller;

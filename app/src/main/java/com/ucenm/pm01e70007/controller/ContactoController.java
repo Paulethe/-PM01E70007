@@ -9,7 +9,7 @@ import com.ucenm.pm01e70007.util.Validador;
 
 import java.util.List;
 
-/** CONTROLADOR: valida y coordina la vista con el DAO. */
+/** Validar y coordina la vista con el DAO. */
 public class ContactoController {
 
     /** Error de validación asociado a un campo del formulario. */
